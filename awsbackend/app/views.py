@@ -39,13 +39,14 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         serializer = UserSerializerWithToken(self.user).data
         for k,v in serializer.items():
             data[k]=v
-
+    
 
         return data
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class=MyTokenObtainPairSerializer
-
+    
+        
 
 
 @api_view(['GET'])

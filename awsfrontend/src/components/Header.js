@@ -24,7 +24,7 @@ function Header() {
           <Container>
 
           <LinkContainer to="/"LinkContainer>
-        <Navbar.Brand>AWS Bookstore</Navbar.Brand>
+        <Navbar.Brand>A.R.K</Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
