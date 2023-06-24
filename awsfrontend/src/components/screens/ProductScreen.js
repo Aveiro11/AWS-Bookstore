@@ -26,7 +26,7 @@ function ProductScreen({ match,history }) {
     history.push(`/cart/${match.params.id}?qty=${qty}`)
 
  }
- 
+
   return (
     <div>
       <Link to="/" className="btn btn-dark my-3">
@@ -37,7 +37,7 @@ function ProductScreen({ match,history }) {
 
 {loading ? (
         <Loader />
-        
+
       ) : error ? (
         <Message variant='danger'>{error} </Message>
       ) : (
